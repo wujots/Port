@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,900,100italic%7CRock+Salt%7CVollkorn:400,400italic' rel='stylesheet' type='text/css'>
 	<title>J+W</title>
 	<link rel="shortcut icon" href="./img/shortcuticon.png"/>
 
@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 
 	<!--Custom CSS-->
 	<link rel='stylesheet' id='momsId' href="./css/stylez.css" type='text/css' media='all' property='' />	
@@ -31,107 +32,278 @@
 		window.addEventListener("scroll", parallax, false);
 	</script>  
 
+	<script type="text/javascript">
+	// Create the tooltips only on document load
+	$(document).ready(function() 
+	{
+	   // Match all link elements with href attributes within the content div
+	   $('#content a[href]').qtip(
+	   {
+	      content:  ' adverb <br> 1. The portfolio of Joanne Wu. <br> 2. Sitting in front of a screen... again. <br> 3. Planet Earth: Mostly harmless.',
+	      style: { 
+
+		      width: 240,
+		      padding: 10,
+		      background: '#dbdbdb',
+		      color: 'black',
+		      
+		      'font-size': 14,
+		      border: {
+		         width: 0,
+		         color: '#bfbfbf'
+		      },
+		      tip: 'topLeft',
+		      name: 'dark' 
+		   }
+	   });
+
+	});
+
+	</script>
+
+	  <div id="container">
+
 		<div class="sidebar">
 			<div class="sidebar-content">
 				<div id="sidebarspace"></div>
-				{logo goes here}<br>
+				<img src="./img/" /><br>
 
 				<hr>
-				<a>Home</a>
+				<a href="google.com">Home</a>
 				<hr>
 				<a>Work</a>
 				<hr>
 				<a>About</a>
 				<hr>
+
 			</div>
 		</div>
 
-	  <div id="container">
 	    <div id="parallax"></div>
+	    <div id="content"> 
+		    <div id="text">
+		      
+		      <h1 style="font-family: 'Vollkorn', serif; font-size: 45px; font-style: italic;">
+		      		You are <a href="#"><span class="shiny"><span class="inner-shiny">here</span></span></a>.
+		      </h1>
+		      <div class="largespace"></div>
+		      <p style="font-family: 'Vollkorn', serif;">Glad you made it.</p>
 
-	    <div id="text">
-	      <img src="./img/shortcuticon.png" />
-	      <h1>Welcome to my page, biatch</h1>
-	      <p>This is a little tidbit about me.</p>
-	      <a href="mailto:jotiwu@gmail.com" target="_blank">Say hi!</a>
+		    </div>
 	    </div>
 	  </div>
 
-	<div id="content">
+	<div id="content2">
 		<div id="errthang">
-			<div class="intro-wrapper">
+
+			<div class="wrapper" style="background-color: #3f3f3f;">
+				<div class="box-title1">
+					Welcome to the portfolio of <a>Joanne Wu</a>.
+				</div>
+	    		<div class="intro-content">
+
+					<p>
+						Joanne is a designer and developer, a (practical) idealist, a lover of burrito bowls, an inspirational quotes enthusiast, and an learning equality advocate who is out to make this world a better place.
+					</p>
+
+					
+					
+	    		</div>
+	    	</div>
+
+			<div class="wrapper" style="background-color: #4f4f4f;">
+
 	    		<div class="intro-content">
 					<p>
-						<h2>You are here.</h2><br>
-						<h3>Glad you could make it.</h3><br>
-							This is the portfolio of <a>Joanne Wu</a>.<br>
-
-							Joanne is a designer and developer, an idealist, a lover of words, a student of life, and an inhabitant of Earth who is out to make the world a better place.<br>
-
-							Thanks for visiting.... 
-							we hope you found what you were looking for.
+						She currently studies Computer Science at <a href="http://ucsd.edu">University of California, San Diego</a>. <p>
+						Informally,
+						she also studies web design, user experience and human-computer interaction, cognitive psychology, philosophy, and how to avoid
+						being awkward in public settings.</p>
 					</p>
+
+					<p>
+						<a href="#" style="margin-left: 90%;">More?</a>
+					</p>
+					
 	    		</div>
 	    	</div>
 
-	    	<div class="work-wrapper">
-	    		<h1>Here are the remnants of her work...</h1>
-	    		<h1>Gruupsy</h1>
-	    		<em>Problem</em>: We thought that there could be more people getting together to be social.. etc.
+	    	<div class="wrapper" style="background-color: #69653f;">
+	    		<div class="work-content">
+		    		<div class="box-title3">
+						Work
+					</div>
+		    		<div id="project-area">
+		    			<span class="project-head">
+		    				Project: Gruupsy
+		    			</span>
 
-	    		<img></img>
+		    			<p>
+			    			<span class="project-title">About</span><br>
+			    			Gruupsy is a social web service that allows individuals in the San Diego area to search 
+			    			for group activities happening nearby or are that are coming up.
+			    			This tool was built with UCSD
+			    			students in mind. College students are always trying to save extra cash.
+			    			They are also curious about events happening nearby that they can take part in at any given time.
+			    			Combining these core ideas, the idea for this project manifested. 
+			    			That is, Gruupsy facilitates group discounted events made by SD locals.
+			    		</p>
 
-	    		<h2>Menyou</h2>
-	    		<em>Concept</em>: We wanted to create a thingymajiggy for people to eat etc.
+			    		<p>
+			    			<span class="project-title">The Challenge</span><br>
+			    			While there are services out there geared for business members to advertise to customers, Gruupsy wants 
+			    			students to be able to take the initiative to create their own events for which others are open to attend, 
+			    			as well gather groups to purchase tickets to events at a group discount. However, it would be difficult to
+			    			convert users from existing platforms, and it was unclear whether they would be enthusiastic about having
+			    			to put effort into contributing.
+		    			</p>
 
-	    		<img></img>
+		    			<p>
+			    			<span class="project-title">The Approach</span><br>
+			    			First, websites that offered similar services were examined for their technique and execution and the findings 
+			    			of the positives, what to avoid, and other extracted ideas were
+			    			compiled into a competitive analysis report. Next, research had to be done to understand how users utilized 
+			    			existing services; surveys were conducted
+			    			by watching how students interacted with sites such as Groupon, Massdrop, or the UCSD recreation site, and
+			    			the problems were identified; these problems are what is to mainly be addressed in the first version of
+			    			Gruupsy.
+		    			</p>
 
+		    			<p>
+			    			<span class="project-title">Content Creation</span><br>
+			    			Based on the collected information about usage and competitors, wireframes were prototyped and created on paper
+			    			and later, Balsamiq. Images chosen for the pages were high res and large, to try to provide an immersive feeling
+			    			to evoke what it could be like to attend some of the exciting events. A work in progress...
+		    			</p>
+
+		    			<p>
+			    			<span class="project-title">Testing</span><br>
+			    			To be updated.
+		    			</p>
+
+		    		</div>
+			    	<img></img>
+	    		</div>
 	    	</div>
-
-	    	<div class="about-wrapper">
+	    	<div class="wrapper" style="background-color: #847b2f;">
 	    		<div class="about-content">
-	    			<h2>Joanne's Stats</h2>
+	    			<div class="box-title3">
+						Other Fun Things
+					</div>
 
-	    			Stat's thingy 
+	    			<div id="project-area2">
+	    				<span class="project-head">This Portfolio</span>
+	    				<p>In which she creates this personal page which has been quite a fun journey. A short description here</p>
 
-	    			<p>
-	    				There should be things like burritos
-	    				<h1> AND PROJECTS.... whoooo</h1>
-	    			</p>
+	    				<hr>
+
+	    				<span class="project-head">365 Days of GitHub</span>
+	    				<p>In which she attempts to have 365 days straight of commits. A short description here</p>
+	    	
+	    				<hr>
+	    			
+	    				<span class="project-head">Cryptorella</span>
+	    				<p>In which she attempts to write a bot that tweets Disney and pop songs with computer science references.<br>
+	    					"I came in like a backing store." -Miley Cyrus. A short description here</p>
+	    			</div>
+
+
 	    		</div>
 	    	</div>
-
-	    	<div class="contact-wrapper">
-	    		Links here to twitter, instagram, github, etc.
+	    	<div class="wrapper" style="background-color: #9f911f; text-align: center;">
+	    		<p>
+					There is more to come.
+	    		</p>
+	    		<p>
+					There is more to come.
+	    		</p>
+	    		<p>
+					There is more to come.
+	    		</p>
+	    		<p>
+					There is more to come.
+	    		</p>
+	    		<p>
+					There is more to come.
+	    		</p>
+	    		<p>
+					There is more to come.
+	    		</p>
+	    		<p>
+					There is more to come.
+	    		</p>
 	    	</div>
 
-	    	<footer>
+			<div class="wrapper" id="button" style="background-color: #baa70f;">
+				<div class="box-title2">
+						Contact
+					</div>
 
-	    	</footer>
+					<a href="http://www.twitter.com/wujots" target="_blank">Twitter</a>
+		    		<a href="http://www.github.com/wujots" target="_blank">GitHub</a>
+					<a href="mailto:jotiwu@gmail.com" target="_blank">Send a greeting.</a>
 
+			</div>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi eveniet, ipsam quo deleniti deserunt esse repellat tenetur voluptas facere quis quibusdam et numquam id expedita nulla, sunt aliquam! Modi quo deserunt, voluptates necessitatibus at fuga ipsum aperiam repellendus tenetur aliquam voluptatum repudiandae ipsam, earum tempora, nulla soluta, saepe fugiat mollitia!</p>
-			<p>Qui incidunt ratione pariatur nisi earum animi, molestiae vero nobis, quibusdam quos illum neque, ex assumenda quidem quis quae ducimus adipisci possimus at a dignissimos commodi. Tenetur ab, qui quod ex aliquam, dolore, animi illum et molestias cupiditate ipsum ullam? Fugiat rerum, iste quod aperiam minus consequatur minima alias sapiente!</p>
-			<p>Quaerat delectus sed eos, maxime temporibus. Laboriosam, debitis, error. Dicta, nesciunt, hic. Nobis incidunt dolorum tenetur iusto minima repudiandae eligendi eum doloribus quas error, totam laboriosam temporibus tempora provident, molestiae suscipit exercitationem aliquid eaque id magni odit expedita facere repellendus porro a. Perspiciatis quae eum, harum voluptate natus dicta aspernatur.</p>
-			<p>Quia natus vitae voluptatibus optio harum rerum assumenda nobis quam corporis, repellat quibusdam iusto possimus reprehenderit? Rem voluptas, architecto ea fuga voluptatum, repudiandae animi a fugiat quam earum commodi harum eum cupiditate expedita voluptate autem veniam debitis. Provident eos magni earum numquam minus illo nobis, repudiandae veniam aliquid. Odio, necessitatibus?</p>
-			<p>Minus, at in! Odit, corporis commodi soluta nobis. Illum beatae, facere veniam voluptatem sed temporibus eum iure quis in qui numquam, minus rem cum provident ipsam ad alias amet autem totam quisquam quae dolore! Nobis fuga eveniet et voluptas aliquid ipsam error vero id maxime, odio, suscipit quam quae nisi!</p>
-			<p>Quos quidem culpa odit quas, earum dolores, asperiores itaque quis optio velit ullam aperiam aspernatur ex tenetur a delectus praesentium quia recusandae reprehenderit et! Quae veniam debitis velit architecto officia quidem ipsam, excepturi culpa neque eius odio deleniti suscipit repudiandae ullam corrupti cumque dicta impedit sunt sint tempora illo autem.</p>
-			<p>Reiciendis, temporibus delectus fugiat tenetur, reprehenderit adipisci laborum enim voluptates assumenda recusandae neque. Nam ipsa, sit dolorem incidunt nihil repellat corporis vero porro accusamus magni, laboriosam, quibusdam suscipit consequatur eos fugit odio minima esse perspiciatis nesciunt quasi labore iste delectus ea. Tempora adipisci magnam consequuntur ullam culpa fugiat mollitia distinctio.</p>
-			<p>Ipsa itaque nobis numquam fugit quis tempore tenetur culpa dolorum laborum? Dolores voluptatum nostrum natus aspernatur dolor eveniet nesciunt aperiam molestiae, nam, rerum accusantium praesentium cumque, quibusdam a illo ipsum unde error repellendus voluptas officia debitis. Facilis repellendus, soluta quasi perspiciatis ipsam molestias quidem adipisci. Sed delectus ad, natus modi!</p>
-			<p>Ea enim quam nam reprehenderit deserunt assumenda impedit quisquam ipsum molestias molestiae doloribus, voluptate nemo quaerat explicabo fuga, minima ex consequuntur magni tempore aperiam numquam praesentium, porro vitae est. Aliquid voluptatibus enim, mollitia ab qui id nesciunt omnis voluptas cum nisi corrupti molestias nam officia possimus alias quia, fugit porro.</p>
-			<p>Cupiditate, labore, nisi, adipisci dicta nihil libero voluptates delectus obcaecati dolore eos asperiores? Illum laudantium aliquid velit asperiores iusto dolore quisquam. Enim illum id delectus? Beatae ut nisi similique ab dolores omnis eos qui quisquam. Deserunt nihil, ex, ipsa voluptates blanditiis laborum natus sapiente? Perferendis dolorem nam esse sit nobis.</p>
-			<p>Aspernatur adipisci, magnam nulla officia qui repellat labore voluptas facere, nam praesentium inventore amet ratione voluptates tenetur numquam. Illum fugit, doloribus earum sint! Aliquam officia, in doloribus non quisquam nihil officiis quibusdam delectus voluptatum. Eveniet debitis mollitia esse nostrum laudantium praesentium. Eum consequuntur nemo recusandae numquam quos facere natus dignissimos!</p>
-			<p>Dolor, dolorem voluptatum vero, dolore fugit optio veritatis ducimus aspernatur! Commodi qui enim, vel, praesentium tenetur voluptatem velit assumenda, reprehenderit dolor, similique rem! Provident laboriosam dolorem reiciendis a consectetur atque enim nostrum ex dignissimos ducimus, dicta amet, ipsa reprehenderit. Eum consectetur quod, nisi veniam cupiditate qui nobis architecto autem ab!</p>
-			<p>Voluptatibus nam iure, impedit earum dicta culpa sed laboriosam id sunt hic eveniet eius dolores, accusamus fugit, unde officiis est repellendus. Laboriosam blanditiis sunt autem magnam quos est porro aperiam omnis quia obcaecati, adipisci odit accusamus eaque reiciendis eligendi unde error consequatur fugiat vel cumque molestiae, doloribus quisquam? Praesentium, blanditiis?</p>
-			<p>Nulla reprehenderit totam natus cum, fugiat vero, porro, et aliquam soluta laboriosam nemo dolor laborum quis autem voluptatem est consequuntur. Voluptatum sit nostrum modi, minus aspernatur nisi, esse! Unde dolore quidem amet ullam nemo non, minima rerum animi voluptas. Unde ab officia modi aliquam vel minima, sunt rerum culpa magni.</p>
-			<p>Corporis vitae eius, consectetur maiores amet tenetur quia quidem quam atque nesciunt quasi laudantium commodi ratione et laboriosam, repudiandae officia itaque assumenda recusandae reprehenderit dolores qui voluptatem at. Perspiciatis molestiae aperiam perferendis soluta, porro, numquam ab beatae odit id omnis, facilis non totam unde dolore ipsum nulla repellat sint at.</p>
-			<p>Porro accusantium, minima dolores quisquam iure libero harum numquam doloribus, fugit, illum distinctio. Eius repellendus ipsum cupiditate, dicta ipsam mollitia, tempora quae facilis cumque iste odio repudiandae similique quisquam fuga explicabo maiores consectetur pariatur quidem, aut amet consequuntur expedita a quod quas atque! Facere quam, maxime expedita cumque nulla tempore.</p>
-			<p>Cumque odit, vitae velit, perspiciatis repellendus numquam! Culpa, minus, nihil. Placeat modi eum, possimus voluptatum veniam molestias dolor odio vel, tempore officia commodi exercitationem iste quas et natus aliquam neque architecto labore voluptate laborum ad optio recusandae. Error blanditiis, voluptas totam qui veniam asperiores, dolor aspernatur aut nisi, nesciunt beatae.</p>
-			<p>Magni aspernatur, eos sit repellendus amet assumenda labore repudiandae unde dolore quos! Dicta explicabo earum architecto voluptate alias expedita, dolor, nobis provident similique, ipsam sequi quis totam blanditiis reprehenderit dolores. Reiciendis, eos consectetur, vitae architecto repudiandae doloremque eveniet nemo quae, corporis illo commodi dicta ex, enim amet ipsam. Fuga, a.</p>
-			<p>Totam quo aliquid, omnis unde dignissimos aperiam delectus exercitationem dicta rem voluptatum ad incidunt est ipsa fugit magni suscipit veniam accusamus harum porro magnam ratione, nobis libero dolorum. Odio non alias laudantium, accusamus id voluptas, minima praesentium enim ut deleniti quia autem ex nulla mollitia voluptatum! Odit atque voluptatum quos?</p>
-			<p>Voluptates eius ex porro alias quod explicabo, nesciunt expedita, ratione sint corporis rerum harum velit non natus nemo deleniti! Officiis ex quia cumque minus laborum, ut ducimus vel ipsam, atque aliquam rerum sit. Totam veniam magni doloremque dolores ab consequuntur facere dolorum quod corrupti, reiciendis vero assumenda obcaecati velit eveniet.</p>
-		</div>
-	</div>
+			<div class="wrapper" style="background-color: #d5bd00;">
+
+				<p style="text-align: center">
+					<div class="box-title2">
+						Thank you for visiting.
+					</div>
+					I hope you found what you were looking for.
+				</p>
+			</div>
+
+			<section id="a0" style="text-align: center; padding-top: 30%; color: #3f3f3f; font-size: 24px; letter-spacing: 1px;">
+				&middot;<br>&middot;<br>&middot;<br>
+				Things are changing!<br> &middot;<br>
+				Brace yourself.<br>
+				&middot;<br>&middot;<br>&middot;<br>
+			</section>
+			<section id="a1"></section>
+			<section id="a20"></section>
+			<section id="a2"></section>
+			<section id="a21"></section>
+			<section id="a3"></section>
+			<section id="a22"></section>
+			<section id="a4"></section>
+			<section id="a23"></section>
+			<section id="a5"></section>
+			<section id="a24"></section>
+			<section id="a6"></section>
+			<section id="a7"></section>
+			<section id="a8"></section>
+			<section id="a9"></section>
+			<section id="a10"></section>
+			<section id="a12"></section>
+			<section id="a13"></section>
+			<section id="a14"></section>
+			<section id="a15"></section>
+			<section id="a16"></section>
+			<section id="a17"></section>
+			<section id="a18" style="padding: 5% 0 0 2%; font-size: 16px; text-align: center; 
+				background-image:url('./img/skybg.jpg'); background-position: bottom;">
+				<span style="font-family: 'Vollkorn', serif; font-size: 24px; font-style: italic;">Finite.</span>
+				<p>
+				Banner image from <a href="http://reddit.com/r/EarthPorn">/r/EarthPorn</a>,<br>
+				Flipbook idea from <a href="http://andrevv.com">andrevv.com</a>. 
+				</p>
+				
+					Return to the <a href="#">Top of the World</a> <br>
+					or<br> 
+					<a href="mailto:jotiwu@gmail.com">Say Hello</a>!
+				
+			</section>
+
+		</div> <!--end errthang-->
+	</div><!-- end content-->
+
+	<!--parallax thing from yellow to gray to blue, then a header that was like you came pretty far. have a cookie?-->
+
+	<script type="text/javascript" src="./js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.qtip-1.0.0-rc3.min.js"></script>
+
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
