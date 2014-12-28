@@ -1,0 +1,168 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 18px;
+}
+
+a{
+  cursor: pointer;
+  color: #D2B48C;
+  transition:.5s ease all;
+  font-family: 'Cutive Mono', serif;
+  font-size: 18px;
+  letter-spacing: -1px;
+  padding: 4px;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #5f5f5f;
+  background-color: #FFFAFA;
+  border-radius: 10px;
+}
+
+hr{
+  border: 0px;
+  background-color: #6f6f6f;
+  height: 0.5px;
+}
+
+#container {
+  position:relative;
+  margin:0 auto;
+  padding:0;
+  width: 80%;
+  overflow:hidden;
+}
+
+#nav{
+	text-align: center;
+	margin: 3%;
+}
+
+#nav a{
+	padding: 10px;
+	transition:.5s ease all;
+}
+
+#nav-links{
+	border-bottom: 1px solid #efefef;
+	padding: 15px;
+	font-size: 20px;
+	font-family: 'Cutive Mono', serif;
+	height: 100px;
+	width: 100%;
+}
+
+#nav-links a:hover{
+	background-color: #FAF0E6;
+	border-radius: 5px;
+	color: gray;
+}
+
+#nav li{
+	padding: 10%;
+	display: inline;
+}
+
+.content-box{
+	padding: 5% 0 5% 5%;
+	margin-top: 3% ;
+	border-left: 5px double #D2B48C;
+	overflow: hidden;
+}
+
+.content-box-title{
+	padding-bottom: 30px;
+	font-family: 'Cutive Mono', serif;
+	font-size: 26px;
+	color: #5f5f5f;
+	text-transform: uppercase;
+}
+
+.content-image{
+	width: 300px;
+	height: 180px;
+	float: left;
+	margin-right: 5%;
+	padding-bottom: 30px;
+}
+
+.content-text{
+	color: #7f7f7f;
+}
+
+#nav-logo{
+	height: 100%;
+	width: 100%;
+	margin: 2%;
+}
+
+#header{
+	border: 2px solid #E2CFCF;
+	height: 100%;
+	position: relative;
+}
+
+#header-font{
+	margin: 3px;
+	background-color: #F8EDED;
+}
+
+#header-small-text{
+	padding: 8%;
+	font-size: 20px;
+	color: #5f5f5f;
+}
+
+#button p,
+#button h3,
+#button a {
+  margin: 5px 0;
+}
+
+#button a {
+  font-size: 15px;
+  padding: 12px 25px;
+  display:inline-block;
+  color: #AFAFAF;
+  font-family: 'Cutive Mono', serif;
+  text-decoration:none;
+  background:rgba(255,255,255, .2);
+  border: 2px solid #D2B48C;
+  border-radius: 5px;
+  transition:.5s ease all;
+}
+
+#button a:hover {
+  background: #D9A320;
+  color: #4f4f4f;
+  border-color: #D9A320;
+}
+
+#contact{
+	margin-top: 5%;
+	border: 2px solid #E2CFCF;
+	height: 100%;
+	position: relative;
+}
+
+#contact-info{
+	margin: 3px;
+	background-color: #F8EDED;
+	padding: 5%;
+}
+
+#footer-box{
+	margin: 5% 5% 0 5%;
+}
+
+footer{
+	min-width: 100%;
+	padding: 3%;
+	text-align: center;
+	border-top: 1px solid #efefef;
+	font-size: 14px;
+}

@@ -7,306 +7,248 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<link href='http://fonts.googleapis.com/css?family=Roboto:100,900,100italic%7CRock+Salt%7CVollkorn:400,400italic' rel='stylesheet' type='text/css'>
-	<title>J+W</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,900,100italic%7CCutive+Mono' rel='stylesheet' type='text/css'>
+	<title>Joanne Wu</title>
 	<link rel="shortcut icon" href="./img/shortcuticon.png"/>
 
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+	<!--FancyBox-->
+
+    <!-- Add jQuery library -->
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="./fancybox/lib/jquery.mousewheel.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="./fancybox/source/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="./fancybox/source/jquery.fancybox.css" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="./fancybox/source/helpers/jquery.fancybox-buttons.css" />
+	<script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="./fancybox/source/helpers/jquery.fancybox-thumbs.css" />
+	<script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+	<script type="text/javascript">
+	window.onload = function() {
+	    $(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+	};
+	</script>
 
 	<!--Custom CSS-->
-	<link rel='stylesheet' id='momsId' href="./css/stylez.css" type='text/css' media='all' property='' />	
+	<link rel='stylesheet' id='momsId' href="./css/stylesheet.css" type='text/css' media='all' property='' />	
 </head>
 
 <body>
-	<script>
-		function parallax() {
-		  var parallax = document.getElementById("parallax");
-		  parallax.style.top = -(window.pageYOffset / 4)+'px';
-		}
+	<a name="top"></a>
+	<div id="container">
+		
+		<div id="nav">
+			
+			<div id="nav-logo">
+				<img src="./img/multicolor.png" alt="" style="width: 100px; height: 100px">
+			</div>
 
-		window.addEventListener("scroll", parallax, false);
-	</script>  
-
-	<script type="text/javascript">
-	// Create the tooltips only on document load
-	$(document).ready(function() 
-	{
-	   // Match all link elements with href attributes within the content div
-	   $('#content a[href]').qtip(
-	   {
-	      content:  ' adverb <br> 1. The portfolio of Joanne Wu. <br> 2. Sitting in front of a screen... again. <br> 3. Planet Earth: Mostly harmless.',
-	      style: { 
-
-		      width: 240,
-		      padding: 10,
-		      background: '#dbdbdb',
-		      color: 'black',
-		      
-		      'font-size': 14,
-		      border: {
-		         width: 0,
-		         color: '#bfbfbf'
-		      },
-		      tip: 'topLeft',
-		      name: 'dark' 
-		   }
-	   });
-
-	});
-
-	</script>
-
-	  <div id="container">
-
-		<div class="sidebar">
-			<div class="sidebar-content">
-				<div id="sidebarspace"></div>
-				<img src="./img/shortcuticon.png" alt="JoTiWu"/><br>
-
-				<hr>
-				<a href="google.com">Home</a>
-				<hr>
-				<a>Work</a>
-				<hr>
-				<a>About</a>
-				<hr>
-
+			<div id="nav-links">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#work">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 			</div>
 		</div>
 
-	    <div id="parallax"></div>
-	    <div id="content"> 
-		    <div id="text">
-		      
-		      <h1 style="font-family: 'Vollkorn', serif; font-size: 45px; font-style: italic;">
-		      		You are <a href="#"><span class="shiny"><span class="inner-shiny">here</span></span></a>.
-		      </h1>
-		      <div class="largespace"></div>
-		      <p style="font-family: 'Vollkorn', serif;">Glad you made it.</p>
+		<a name="about"></a>
+		<div id="content">
+			<div id="header">
 
-		    </div>
-	    </div>
-	  </div>
+				<div id="header-font">
+					<div id="header-small-text">
+						<p style="font-family: 'Cutive Mono', serif; text-transform: uppercase; font-size: 36px;">
+							Hello! I'm Joanne.
+						</p>
 
-	<div id="content2">
-		<div id="errthang">
+						<p>
+							I'm a creative builder, empathetic designer, divergent thinker, and life-long student with a passion for humans, computers, and all that connects the two.
+						</p>
+					</div>
 
-			<div class="wrapper" style="background-color: #3f3f3f;">
-				<div class="box-title1">
-					Welcome to the portfolio of <a>Joanne Wu</a>.
 				</div>
-	    		<div class="intro-content">
-
-					<p>
-						Joanne is a designer and developer, a (practical) idealist, a lover of burrito bowls, an inspirational quotes enthusiast, and an  advocate of learning equality who is out to make this world a better place.
-					</p>
-
-					
-					
-	    		</div>
-	    	</div>
-
-			<div class="wrapper" style="background-color: #4f4f4f;">
-
-	    		<div class="intro-content">
-					<p>
-						She currently studies Computer Science at <a href="http://ucsd.edu">University of California, San Diego</a>.
-					</p>
-					<p>
-						Informally,
-						she also studies web design, user experience and human-computer interaction, cognitive psychology, philosophy, and how to avoid
-						being awkward in public settings.
-					</p>
-
-					<p>
-						<a href="#" style="margin-left: 90%;">More?</a>
-					</p>
-					
-	    		</div>
-	    	</div>
-
-	    	<div class="wrapper" style="background-color: #69653f;">
-	    		<div class="work-content">
-		    		<div class="box-title3">
-						Work
-					</div>
-		    		<div id="project-area">
-		    			<span class="project-head">
-		    				Project: Gruupsy
-		    			</span>
-
-		    			<p>
-			    			<span class="project-title">About</span><br>
-			    			Gruupsy is a social web service that allows individuals in the San Diego area to search 
-			    			for group activities happening nearby or are that are coming up.
-			    			This tool was built with UCSD
-			    			students in mind. College students are always trying to save extra cash.
-			    			They are also curious about events happening nearby that they can take part in at any given time.
-			    			Combining these core ideas, the idea for this project manifested. 
-			    			That is, Gruupsy facilitates group discounted events made by SD locals.
-			    		</p>
-
-			    		<p>
-			    			<span class="project-title">The Challenge</span><br>
-			    			While there are services out there geared for business members to advertise to customers, Gruupsy wants 
-			    			students to be able to take the initiative to create their own events for which others are open to attend, 
-			    			as well gather groups to purchase tickets to events at a group discount. However, it would be difficult to
-			    			convert users from existing platforms, and it was unclear whether they would be enthusiastic about having
-			    			to put effort into contributing.
-		    			</p>
-
-		    			<p>
-			    			<span class="project-title">The Approach</span><br>
-			    			First, websites that offered similar services were examined for their technique and execution and the findings 
-			    			of the positives, what to avoid, and other extracted ideas were
-			    			compiled into a competitive analysis report. Next, research had to be done to understand how users utilized 
-			    			existing services; surveys were conducted
-			    			by watching how students interacted with sites such as Groupon, Massdrop, or the UCSD recreation site, and
-			    			the problems were identified; these problems are what is to mainly be addressed in the first version of
-			    			Gruupsy.
-		    			</p>
-
-		    			<p>
-			    			<span class="project-title">Content Creation</span><br>
-			    			Based on the collected information about usage and competitors, wireframes were prototyped and created on paper
-			    			and later, Balsamiq. Images chosen for the pages were high res and large, to try to provide an immersive feeling
-			    			to evoke what it could be like to attend some of the exciting events. A work in progress...
-		    			</p>
-
-		    			<p>
-			    			<span class="project-title">Testing</span><br>
-			    			To be continued.
-		    			</p>
-
-		    		</div>
-			    	
-	    		</div>
-	    	</div>
-	    	<div class="wrapper" style="background-color: #847b2f;">
-	    		<div class="about-content">
-	    			<div class="box-title3">
-						Other Fun Things
-					</div>
-
-	    			<div id="project-area2">
-	    				<span class="project-head">This Portfolio</span>
-	    				<p>In which she creates this personal page which has been quite a fun journey. A short description here</p>
-
-	    				<hr>
-
-	    				<span class="project-head">365 Days of GitHub</span>
-	    				<p>In which she attempts to have 365 days straight of commits. A short description here</p>
-	    	
-	    				<hr>
-	    			
-	    				<span class="project-head">Cryptorella</span>
-	    				<p>In which she attempts to write a bot that tweets Disney and pop songs with computer science references.<br>
-	    					"I came in like a backing store." -Miley Cyrus. A short description here</p>
-	    			</div>
-
-
-	    		</div>
-	    	</div>
-	    	<div class="wrapper" style="background-color: #9f911f; text-align: center;">
-	    		<p>
-					There is more to come.
-	    		</p>
-	    		<p>
-					There is more to come.
-	    		</p>
-	    		<p>
-					There is more to come.
-	    		</p>
-	    		<p>
-					There is more to come.
-	    		</p>
-	    		<p>
-					There is more to come.
-	    		</p>
-	    		<p>
-					There is more to come.
-	    		</p>
-	    		<p>
-					There is more to come.
-	    		</p>
-	    	</div>
-
-			<div class="wrapper" id="button" style="background-color: #baa70f; text-align: center;">
-				<span class="box-title2" style="text-align: center;">
-						Connect with &nbsp;
-					</span>
-
-					<a href="http://www.twitter.com/wujots" target="_blank">Twitter</a>
-		    		<a href="http://www.github.com/wujots" target="_blank">GitHub</a> &nbsp; or &nbsp;
-					<a href="mailto:jotiwu@gmail.com" target="_blank">Email</a>
 
 			</div>
 
-			<div class="wrapper" style="background-color: #d5bd00; text-align: center;">
+			<a name="work"></a>
+			<div id="center">
 
-				<p>
-					<span class="box-title2" style="text-align: center">
-						Thank you for visiting.
-					</span>					
-				</p>
-				<p>
-					I hope you found what you were looking for.
-				</p>
+				<div class="content-box">
+
+					<div class="content-box-title">
+						Home Palette Design
+					</div>
+
+					<div class="content-image">
+						<img src="./img/cesar.jpg" alt="" style="width: 300px; height: 180px">
+					</div>
+
+					<div class="content-text">
+						<p>
+							A web application that facilitates online purchases of home furnishings by helping
+							users color match potential buys with the palettes of their rooms.
+						</p>
+						<p>
+							Roles: UX Researcher<br>
+							Duration: December 2014 - Current
+						</p>
+						<span id="button">
+							<a href="#">Read More</a>
+						</span>
+
+					</div>
+				</div>
+
+				<div class="content-box">
+
+					<div class="content-box-title">
+						Gruupsy
+					</div>
+
+					<div class="content-image">
+						<a class="fancybox" rel="group" href="./img/gruupsyhome.png"/>
+							<img src="./img/gruupsyhome.png" alt="" style="width: 300px; height: 180px"/>
+						</a>
+					</div>
+
+					<div class="content-text">
+						<p>
+							A web service that allows individuals in the San Diego area to gather people together to purchase bulk tickets
+							at a discounted price to events happening nearby or in the near future.
+						</p>
+						<p>
+							Roles: UX Researcher, Front-End Dev<br>
+							Duration: November 2014 - Current
+						</p>
+
+						<span id="button">
+							<a href="#">Read More</a>
+						</span>
+
+					</div>
+					
+
+				</div>
+
+				<div class="content-box">
+
+					<div class="content-box-title">
+						University of Leicester Redesign
+					</div>
+
+					<div class="content-image">
+						<img src="./img/cesar.jpg" alt="" style="width: 300px; height: 180px">
+					</div>
+
+					<div class="content-text">
+						
+						<p>
+							An unsolicited redesign of the University of Leicester's website. <br>
+							We revamped their landing page and the pages on the path to finding more about financial aid.
+						</p>
+						<p>
+							Roles: Information Architect/UX Researcher, Front-End Dev<br>
+							Duration: October 2014 - December 2014
+						</p>
+
+						<span id="button">
+							<a href="#">Read More</a>
+						</span>
+
+					</div>
+				</div>
+
+				<div class="content-box">
+
+					<div class="content-box-title">
+						Menyou
+					</div>
+
+					<div class="content-image">
+						<img src="./img/cesar.jpg" alt="" style="width: 300px; height: 180px">
+					</div>
+
+					<div class="content-text">
+						<p>
+							An iOS app that allows users find food recommendations in the area, see reviews by friends, and post
+							their own ratings and images. 
+						</p>
+						<p>
+							Role: Software Architect, UI Designer<br>
+							Duration: March 2014 - June 2014
+						</p>
+
+						<span id="button">
+							<a href="#">Read More</a>
+						</span>
+
+					</div>
+				</div>
+
 			</div>
 
-			<section id="a0" style="text-align: center; padding-top: 30%; color: #3f3f3f; font-size: 24px; letter-spacing: 1px;">
-				&middot;<br>&middot;<br>&middot;<br>
-				Things are changing!<br> &middot;<br>
-				Brace yourself.<br>
-				&middot;<br>&middot;<br>&middot;<br>
-			</section>
-			<section id="a1"></section>
-			<section id="a20"></section>
-			<section id="a2"></section>
-			<section id="a21"></section>
-			<section id="a3"></section>
-			<section id="a22"></section>
-			<section id="a4"></section>
-			<section id="a23"></section>
-			<section id="a5"></section>
-			<section id="a24"></section>
-			<section id="a6"></section>
-			<section id="a7"></section>
-			<section id="a8"></section>
-			<section id="a9"></section>
-			<section id="a10"></section>
-			<section id="a12"></section>
-			<section id="a13"></section>
-			<section id="a14"></section>
-			<section id="a15"></section>
-			<section id="a16"></section>
-			<section id="a17"></section>
-			<section id="a18" style="padding: 5% 0 0 2%; font-size: 16px; text-align: center; 
-				background-image:url('./img/skybg.jpg'); background-position: bottom;">
-				<span style="font-family: 'Vollkorn', serif; font-size: 24px; font-style: italic;">Finite.</span>
-				<p>
-				Banner image from <a href="http://reddit.com/r/EarthPorn">/r/EarthPorn</a>,<br>
-				Flipbook idea from <a href="http://andrevv.com">andrevv.com</a>. 
-				</p>
-				
-					Return to the <a href="#">Top of the World</a> <br>
-					or<br> 
-					<a href="mailto:jotiwu@gmail.com">Say Hello</a>!
-				
-			</section>
+			<a name="contact"></a>
+			<div id="contact">
+				<div id="contact-info">
+					<p style="font-family: 'Cutive Mono', serif; text-transform: uppercase; font-size: 28px;">
+						Contact Me...
+					</p>
+					<p>
+						...if you are interested in working together on a project, philosophizing about life, 
+						geeking out over technology or design, or just want to say hi. I'd love to hear your thoughts!
+					</p>
+					<br>
+					<div style="text-align: center;">
+						<span id="button">
+								<a href="http://twitter.com/wujots">Twitter</a>
+						</span>
+						<span id="button">
+								<a href="http://github.com/wujots">GitHub</a>
+						</span>
+						<span id="button">
+								<a href="http://pinterest.com/conscious">Pinterest</a>
+						</span>
+						<span id="button">
+								<a href="mailto:jotiwu@gmail.com">Email</a>
+						</span>
+					</div>
 
-		</div> <!--end errthang-->
-	</div><!-- end content-->
+				</div>
+			</div>
 
-	<!--parallax thing from yellow to gray to blue, then a header that was like you came pretty far. have a cookie?-->
+		</div>
 
-	<script type="text/javascript" src="./js/jquery-1.3.2.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.qtip-1.0.0-rc3.min.js"></script>
+	<div id="footer-box">
+		<footer>
+				Made with care by Joanne Wu, 2014. <br>
+				Return to the <a href="#top">top</a>?
+		</footer>
+	</div>
+
+	</div> <!-- end container -->
+	
+
+	
+
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
