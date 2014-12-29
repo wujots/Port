@@ -11,44 +11,46 @@
 	<title>Joanne Wu</title>
 	<link rel="shortcut icon" href="./img/shortcuticon.png"/>
 
-	<!--Bootstrap-->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-	<!--FancyBox-->
-
-    <!-- Add jQuery library -->
-	<script type="text/javascript" src="jquery.js"></script>
-
-	<!-- Add mousewheel plugin (this is optional) -->
-	<script type="text/javascript" src="./fancybox/lib/jquery.mousewheel.pack.js"></script>
-
-	<!-- Add fancyBox main JS and CSS files -->
-	<script type="text/javascript" src="./fancybox/source/jquery.fancybox.js"></script>
-	<link rel="stylesheet" type="text/css" href="./fancybox/source/jquery.fancybox.css" media="screen" />
-
-	<!-- Add Button helper (this is optional) -->
-	<link rel="stylesheet" type="text/css" href="./fancybox/source/helpers/jquery.fancybox-buttons.css" />
-	<script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-
-	<!-- Add Thumbnail helper (this is optional) -->
-	<link rel="stylesheet" type="text/css" href="./fancybox/source/helpers/jquery.fancybox-thumbs.css" />
-	<script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
-
-	<!-- Add Media helper (this is optional) -->
-	<script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-	<script type="text/javascript">
-	window.onload = function() {
-	    $(document).ready(function() {
-				$(".fancybox").fancybox();
-			});
-	};
-	</script>
 
 	<!--Custom CSS-->
 	<link rel='stylesheet' id='momsId' href="./css/stylesheet.css" type='text/css' media='all' property='' />	
+
+    <!-- Add jQuery library -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	 
+	<!-- FancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+	<script type="text/javascript">
+              $(document).ready(function() {
+                        $(".fancybox").fancybox({
+						    helpers : {
+						        title: {
+						            type: 'inside',
+						            position: 'top'
+						        }
+						    },
+						    nextEffect: 'fade',
+						    prevEffect: 'fade'
+						});
+
+						$(".various").fancybox({
+							maxWidth	: 800,
+							maxHeight	: 600,
+							fitToView	: false,
+							width		: '100%',
+							height		: '70%',
+							autoSize	: false,
+							closeClick	: false,
+							openEffect	: 'none',
+							closeEffect	: 'none'
+						});
+              });
+    </script>
+
 </head>
 
 <body>
@@ -58,7 +60,7 @@
 		<div id="nav">
 			
 			<div id="nav-logo">
-				<img src="./img/multicolor.png" alt="" style="width: 100px; height: 100px">
+				<img src="./img/logo.png" alt="" style="width: 100px; height: 100px">
 			</div>
 
 			<div id="nav-links">
@@ -73,7 +75,6 @@
 		<a name="about"></a>
 		<div id="content">
 			<div id="header">
-
 				<div id="header-font">
 					<div id="header-small-text">
 						<p style="font-family: 'Cutive Mono', serif; text-transform: uppercase; font-size: 36px;">
@@ -81,8 +82,9 @@
 						</p>
 
 						<p>
-							I'm a creative builder, empathetic designer, divergent thinker, and life-long student with a passion for humans, computers, and all that connects the two.
+							I'm a creative builder, empathetic designer, divergent thinker, and life-long student with a passion for humans, computers, and all that connects the two. <a class="various" href="#header-more">More?</a>
 						</p>
+
 					</div>
 
 				</div>
@@ -95,24 +97,27 @@
 				<div class="content-box">
 
 					<div class="content-box-title">
-						Home Palette Design
+						Home Palette Design: A Personal Project
 					</div>
 
 					<div class="content-image">
-						<img src="./img/cesar.jpg" alt="" style="width: 300px; height: 180px">
+						<a class="fancybox" title="Home Palette Design" rel="1" href="./img/multicolor.png">
+							<img src="./img/cesar.jpg" alt="" style="width: 300px; height: 180px" alt="" />
+						</a>
+						
 					</div>
 
 					<div class="content-text">
-						<p>
+
 							A web application that facilitates online purchases of home furnishings by helping
 							users color match potential buys with the palettes of their rooms.
-						</p>
 						<p>
 							Roles: UX Researcher<br>
 							Duration: December 2014 - Current
 						</p>
 						<span id="button">
-							<a href="#">Read More</a>
+							
+							<a class="various" href="#hpd-fb">Read More</a>
 						</span>
 
 					</div>
@@ -125,23 +130,23 @@
 					</div>
 
 					<div class="content-image">
-						<a class="fancybox" rel="group" href="./img/gruupsyhome.png"/>
+						<a class="fancybox" title="Gruupsy: Discounts for groups" rel="1" href="./img/gruupsyhome.png"/>
 							<img src="./img/gruupsyhome.png" alt="" style="width: 300px; height: 180px"/>
 						</a>
 					</div>
 
 					<div class="content-text">
-						<p>
+						
 							A web service that allows individuals in the San Diego area to gather people together to purchase bulk tickets
 							at a discounted price to events happening nearby or in the near future.
-						</p>
+						
 						<p>
 							Roles: UX Researcher, Front-End Dev<br>
-							Duration: November 2014 - Current
+							Duration: November 2014 - Current (Paused)
 						</p>
 
 						<span id="button">
-							<a href="#">Read More</a>
+							<a class="various" href="#gruupsy-fb">Read More</a>
 						</span>
 
 					</div>
@@ -161,10 +166,10 @@
 
 					<div class="content-text">
 						
-						<p>
+						
 							An unsolicited redesign of the University of Leicester's website. <br>
 							We revamped their landing page and the pages on the path to finding more about financial aid.
-						</p>
+						
 						<p>
 							Roles: Information Architect/UX Researcher, Front-End Dev<br>
 							Duration: October 2014 - December 2014
@@ -188,10 +193,10 @@
 					</div>
 
 					<div class="content-text">
-						<p>
+						
 							An iOS app that allows users find food recommendations in the area, see reviews by friends, and post
 							their own ratings and images. 
-						</p>
+						
 						<p>
 							Role: Software Architect, UI Designer<br>
 							Duration: March 2014 - June 2014
@@ -218,17 +223,17 @@
 					</p>
 					<br>
 					<div style="text-align: center;">
-						<span id="button">
-								<a href="http://twitter.com/wujots">Twitter</a>
+						<span class="button2">
+								<a href="http://twitter.com/wujots" title="Twitter"><img src="./img/social-twitter.svg" alt="Twitter" style="height: 36px; width: 36px;"/></a>
 						</span>
-						<span id="button">
-								<a href="http://github.com/wujots">GitHub</a>
+						<span class="button2">
+								<a href="http://facebook.com/wuberry" title="Facebook"><img src="./img/social-facebook.svg" alt="Facebook" style="height: 36px; width: 36px;"/></a>
 						</span>
-						<span id="button">
-								<a href="http://pinterest.com/conscious">Pinterest</a>
+						<span class="button2">
+								<a href="http://github.com/wujots" title="GitHub"><img src="./img/social-github.svg" alt="GitHub" style="height: 36px; width: 36px;"/></a>
 						</span>
-						<span id="button">
-								<a href="mailto:jotiwu@gmail.com">Email</a>
+						<span class="button2">
+								<a href="mailto:jotiwu@gmail.com" title="E-mail"><img src="./img/mail.svg" alt="E-mail" style="height: 36px; width: 36px;"/></a>
 						</span>
 					</div>
 
@@ -239,9 +244,94 @@
 
 	<div id="footer-box">
 		<footer>
-				Made with care by Joanne Wu, 2014. <br>
+				Made with care by <a href="mailto:jotiwu@gmail.com">Joanne Wu</a>, 2014. <br>
 				Return to the <a href="#top">top</a>?
 		</footer>
+	</div>
+
+	<div id="fb-holder">
+		<div id="hpd-fb" style="display:none; padding: 5%; width: 70%; font-size: 14px;">
+			<span class="content-box-title">Home Palette Design: Approach</span> &nbsp; // &nbsp; <a href="javascript:$.fancybox.close();">Close</a>
+
+			<p>
+				Currently a work in progress. Details on request.
+			</p>
+
+			<p>
+				
+			</p>
+		</div>
+
+		<div id="header-more" style="display:none; padding: 5%; width: 70%; font-size: 14px;">
+			<span class="content-box-title">More Facts</span> &nbsp; // &nbsp; <a href="javascript:$.fancybox.close();">Close</a>
+
+			<p>
+				<img src="./img/jo.jpg" alt=""/>
+			</p>
+
+			<p>
+				I am:<br>
+				<ul> 
+					<li>a caffeine addict</li>
+					<li>an inspirational quotes enthusiast</li>
+					<li>a literature nerd</li> 
+					<li>a post-it abuser</li>
+					<li>a (practical) idealist</li>
+				</ul>
+			</p>
+			<p>
+				I am currently studying Computer Science at University of California, San Diego.
+			</p>
+			<p>
+				Informally, I also study user experience research methods, cognitive psychology, web design,
+				and how to avoid being awkward in public settings.
+			</p>
+			<p>
+				I love to have a good conversation about anything. Feel free to <a href="mailto:jotiwu@gmail.com">drop a line</a>!
+			</p>
+		</div>
+
+		<div id="gruupsy-fb" style="display:none; padding: 5%; width: 70%; font-size: 14px;">
+			<span class="content-box-title">Gruupsy: An Overview</span> &nbsp; // &nbsp; <a href="javascript:$.fancybox.close();">Close</a>
+
+			<p>
+				
+				<p>
+					<div class="fb-title">About</div>
+					Gruupsy is a social web service that allows individuals in the San Diego area to search for group activities happening nearby or are that are coming up. This tool was built with UCSD students in mind. College students are always trying to save extra cash. They are also curious about events happening nearby that they can take part in at any given time. Combining these core ideas, the idea for this project manifested. That is, Gruupsy facilitates group discounted events made by SD locals.
+				</p>
+
+				
+				<p>
+					<div class="fb-title">The Challenge</div>
+					While there are services out there geared for business members to advertise to customers, Gruupsy wants students to be able to take the initiative to create their own events for which others are open to attend, as well gather groups to purchase tickets to events at a group discount. However, it would be difficult to convert users from existing platforms, and it was unclear whether they would be enthusiastic about having to put effort into contributing.
+				</p>
+
+				
+				<p>
+					<div class="fb-title">The Approach</div>
+					First, websites that offered similar services were examined for their technique and execution and the findings of the positives, what to avoid, and other extracted ideas were compiled into a competitive analysis report. Next, research had to be done to understand how users utilized existing services; surveys were conducted by watching how students interacted with sites such as Groupon, Massdrop, or the UCSD recreation site, and the problems were identified; these problems are what is to mainly be addressed in the first version of Gruupsy.
+				</p>
+
+				
+				<p>
+					<div class="fb-title">Content Creation</div>
+					Based on the collected information about usage and competitors, wireframes were prototyped and created on paper and later, Balsamiq. Images chosen for the pages were high res and large, to try to provide an immersive feeling to evoke what it could be like to attend some of the exciting events. A work in progress...
+				</p>
+
+				
+				<p>
+					<div class="fb-title">Testing</div>
+					To be continued.
+				</p>
+
+				<p>
+					<div class="fb-title">Deliverables</div>
+					Links
+				</p>
+			</p>
+
+		</div>
 	</div>
 
 	</div> <!-- end container -->

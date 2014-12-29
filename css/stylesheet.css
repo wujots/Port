@@ -14,13 +14,12 @@ a{
   font-size: 18px;
   letter-spacing: -1px;
   padding: 4px;
+  text-decoration: none;
 }
 
 a:hover{
   text-decoration: none;
-  color: #5f5f5f;
-  background-color: #FFFAFA;
-  border-radius: 10px;
+  color: #cc9900;
 }
 
 hr{
@@ -37,6 +36,8 @@ hr{
   overflow:hidden;
 }
 
+
+
 #nav{
 	text-align: center;
 	margin: 3%;
@@ -52,14 +53,13 @@ hr{
 	padding: 15px;
 	font-size: 20px;
 	font-family: 'Cutive Mono', serif;
-	height: 100px;
 	width: 100%;
 }
 
 #nav-links a:hover{
-	background-color: #FAF0E6;
+	background-color: #fafafa;
 	border-radius: 5px;
-	color: gray;
+	color: #cc9900;
 }
 
 #nav li{
@@ -69,13 +69,13 @@ hr{
 
 .content-box{
 	padding: 5% 0 5% 5%;
-	margin-top: 3% ;
+	margin-top: 3%;
 	border-left: 5px double #D2B48C;
 	overflow: hidden;
 }
 
 .content-box-title{
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	font-family: 'Cutive Mono', serif;
 	font-size: 26px;
 	color: #5f5f5f;
@@ -101,18 +101,18 @@ hr{
 }
 
 #header{
-	border: 2px solid #E2CFCF;
+	border: 2px solid #f5f5f5; /* mauvy #E2CFCF */
 	height: 100%;
 	position: relative;
 }
 
 #header-font{
 	margin: 3px;
-	background-color: #F8EDED;
+	background-color: #fcfcfc; /*pinkish #F8EDED*/
 }
 
 #header-small-text{
-	padding: 8%;
+	padding: 3% 5% 5% 5%;
 	font-size: 20px;
 	color: #5f5f5f;
 }
@@ -121,6 +121,12 @@ hr{
 #button h3,
 #button a {
   margin: 5px 0;
+}
+
+.fb-title{
+	font-family: 'Cutive Mono', serif;
+	font-size: 20px;
+	text-transform: uppercase;
 }
 
 #button a {
@@ -142,16 +148,25 @@ hr{
   border-color: #D9A320;
 }
 
+.button2{
+	transition: .5s ease all;
+}
+
+.button2 a:hover {
+  opacity: 0.3;
+}
+
 #contact{
 	margin-top: 5%;
-	border: 2px solid #E2CFCF;
+	border: 2px solid #f5f5f5;
 	height: 100%;
 	position: relative;
+	color: #5f5f5f;
 }
 
 #contact-info{
 	margin: 3px;
-	background-color: #F8EDED;
+	background-color: #fcfcfc;
 	padding: 5%;
 }
 
@@ -161,7 +176,8 @@ hr{
 
 footer{
 	min-width: 100%;
-	padding: 3%;
+	padding-bottom: 5%;
+	padding-top: 5%;
 	text-align: center;
 	border-top: 1px solid #efefef;
 	font-size: 14px;
