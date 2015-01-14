@@ -10,7 +10,7 @@ body{
 a{
   cursor: pointer;
   color: #D2B48C;
-  font-family: 'Lora', serif;
+  font-family: 'Arvo', serif;
   transition:.5s ease all;
   text-decoration: none;
 }
@@ -51,7 +51,7 @@ hr{
 	padding: 15px 15px 15px 0px;
 	font-size: 18px;
 	text-transform: lowercase;
-	font-family: 'Lora', serif;
+	font-family: 'Arvo', serif;
 }
 
 #nav-links a:hover{
@@ -74,7 +74,7 @@ hr{
 
 .content-box-title{
 	padding-bottom: 2%;
-	font-family: 'Lora', serif;
+	font-family: 'Arvo', serif;
 	font-size: 22px;
 	color: #4f4f4f;
 	text-transform: uppercase;
@@ -122,7 +122,7 @@ hr{
 
 .fb-title{
 	color: #D2B48C;
-	font-family: 'Lora', serif;
+	font-family: 'Arvo', serif;
 	font-size: 18px;
 	text-transform: uppercase;
 }
@@ -138,7 +138,7 @@ hr{
 
 .project-title{
 	color: #3f3f3f; 
-	font-family: 'Lora', serif; 
+	font-family: 'Arvo', serif; 
 	text-transform: uppercase; 
 	font-size: 26px;
 }
@@ -148,8 +148,7 @@ hr{
   padding: 10px 20px;
   display:inline-block;
   color: #AFAFAF;
-  font-family: 'Lora', serif;
-  font-style: italic; 
+  font-family: 'Arvo', serif;
   text-decoration:none;
   background:rgba(255,255,255, .2);
   border: 2px solid #D2B48C;
