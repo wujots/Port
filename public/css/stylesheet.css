@@ -1,0 +1,149 @@
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
+
+body{
+	/*border-top: 8px solid red;
+	border-bottom: 8px solid red;
+	padding-top: 15px;
+	padding-bottom: 15px;*/
+	margin-top: 90px;
+	margin-bottom: 0px;
+	/*font-family: 'Source Sans Pro', serif;*/
+}
+
+a{
+	font-weight: bold;
+	color: orangered;
+	padding-bottom: 3px;
+}
+
+a:hover{
+	color: #0A0A0A;
+	border-bottom: 3px solid orangered;
+	text-decoration: none;
+}
+
+hr { 
+	display: block; 
+	height: 1px;
+    border: 0; 
+    border-top: 1px solid black;
+    margin: 1em 0; 
+    padding: 0; 
+}
+
+.center-text{
+	text-align: center;
+}
+
+.img-margin{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.img-margin2{
+	margin: 0%;
+	padding: 3%;
+}
+
+.featured-box{
+	padding: 3%;
+
+}
+
+.navbar-default {
+	padding: 1%;
+    background-color: #FFF;
+    border: 0px solid;
+    opacity: .7;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #090909;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: orangered;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: orangered;
+    background-color: transparent;
+    border-bottom: 3px solid #080808;
+}
+
+.navbar-default .navbar-nav > .active2 > a,
+.navbar-default .navbar-nav > .active2 > a:hover,
+.navbar-default .navbar-nav > .active2 > a:focus {
+    color: orangered;
+    background-color: transparent;
+    border-bottom: 3px dotted #080808;
+}
+
+#button p,
+#button h3,
+#button a {
+  margin: 5px 0;
+}
+
+#button a {
+  font-size: 15px;
+  padding: 20px 20px;
+  display: inline-block;
+  color: #AFAFAF;
+  text-decoration:none;
+  background:rgba(255,255,255, .2);
+  border: 2px solid orangered;
+  border-radius: 5px;
+  transition:.5s ease all;
+}
+
+#button a:hover {
+  background: orangered;
+  color: #FFF;
+  opacity: .8;
+}
+
+.index-header{
+	background-color: #F5F5F5;
+	padding: 12% 30% 12% 30%;
+	margin-bottom: 2%;
+	width: 100%;
+	overflow: auto;
+}
+
+.index-header2{
+	background-color: #FF7D52;
+	padding: 12% 30% 12% 30%;
+	margin-bottom: 2%;
+	width: 100%;
+	overflow: auto;
+	color: #FFF;
+}
+
+.vertical-space{
+	height: 30px;
+}
+
+.vertical-space2{
+	height: 20px;
+}
+
+.bgimg {
+    background-image: url('./img/zion.jpg');
+}
+
+footer{
+	background-color: #F5F5F5;
+	margin-top: 3%;
+	padding: 5%;
+}
